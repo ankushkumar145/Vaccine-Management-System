@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💉 Vaccine Management System
 
 A simple and efficient **Vaccine Management System** built as a dummy learning project by our team.  
@@ -80,3 +81,6 @@ Prashant – for designing a clean and user-friendly interface using Tailwind CS
 Lakshay – for his JavaScript integration skills and connecting frontend with backend seamlessly.
 
 💡 Each one of them played a vital role — and this project is a reflection of our teamwork and learning journey.
+=======
+# Vaccine-Management-System
+>>>>>>> 83820c4d0d005926642f7fb8b05ab48148c080e5
