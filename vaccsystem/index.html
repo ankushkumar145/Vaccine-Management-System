@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaxTrack - Vaccine Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">VaxTrack</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-200">Home</a>
+                <a href="#services" class="hover:text-green-200">Services</a>
+                <a href="#about" class="hover:text-green-200">About</a>
+                <a href="#contact" class="hover:text-green-200">Contact</a>
+            </div>
+            <div class="flex space-x-3">
+                <a href="login.php" class="bg-white text-green-600 px-4 py-2 rounded-lg font-medium hover:bg-green-100 transition">Login</a>
+                <a href="register.php" class="bg-green-700 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-800 transition">Register</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-r from-green-500 to-green-600 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Streamlined Vaccine Management</h1>
+                <p class="text-xl mb-6">Schedule your vaccination appointment online, receive reminders, and stay protected.</p>
+                <a href="register.php" class="bg-white text-green-600 px-6 py-3 rounded-lg font-medium text-lg hover:bg-green-100 transition inline-block">Book Appointment</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/vaccine-illustration.png" alt="Vaccination illustration" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-green-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Easy Scheduling</h3>
+                    <p class="text-gray-600">Book your vaccination appointment online in just a few clicks. Choose your preferred date, time, and location.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-green-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Timely Reminders</h3>
+                    <p class="text-gray-600">Receive SMS and email reminders about your upcoming appointments and follow-up doses.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-green-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Digital Records</h3>
+                    <p class="text-gray-600">Access your vaccination history and certificates online anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="images/about-vaccine.jpg" alt="Healthcare professionals" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">About VaxTrack</h2>
+                    <p class="text-gray-600 mb-4">VaxTrack is a comprehensive vaccine management system designed to streamline the vaccination process for both healthcare providers and patients.</p>
+                    <p class="text-gray-600 mb-4">Our platform helps reduce administrative burden, minimize wait times, and ensure timely vaccinations through automated scheduling and reminders.</p>
+                    <p class="text-gray-600 mb-6">We work with healthcare facilities nationwide to improve vaccination rates and public health outcomes.</p>
+                    <a href="#contact" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-green-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-4xl font-bold mb-2">50K+</h3>
+                    <p class="text-xl">Appointments Booked</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2">100+</h3>
+                    <p class="text-xl">Healthcare Facilities</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2">95%</h3>
+                    <p class="text-xl">Attendance Rate</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2">30%</h3>
+                    <p class="text-xl">Admin Time Saved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+            <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <form action="contact_process.php" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">VaxTrack</h3>
+                    <p class="text-gray-400">Streamlining vaccine management for a healthier tomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>123 Healthcare Avenue</p>
+                        <p>Medical District, MD 12345</p>
+                        <p class="mt-2">Email: info@vaxtrack.com</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 VaxTrack. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
