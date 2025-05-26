@@ -68,19 +68,7 @@ Update your database credentials in connection.php or db_config.php
 - [Lakshay]
 - [Prashant](https://github.com/prashantsinghjadaun)
 
-## 🙌 Acknowledgment
 
-This project wouldn’t have been possible without the dedication, collaboration, and energy of my incredible teammates.
-
-Their support turned an idea into a working system.
-
-Lokesh – for building a solid database and ensuring everything worked smoothly through thorough testing.
-
-Prashant – for designing a clean and user-friendly interface using Tailwind CSS.
-
-Lakshay – for his JavaScript integration skills and connecting frontend with backend seamlessly.
-
-💡 Each one of them played a vital role — and this project is a reflection of our teamwork and learning journey.
 =======
 # Vaccine-Management-System
 >>>>>>> 83820c4d0d005926642f7fb8b05ab48148c080e5
